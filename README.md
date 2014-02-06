@@ -1,6 +1,6 @@
 ## Instructions
 
-1. Create a fork of this repository in your private namespace on Gitlab. Find button "Fork repository" on this page http://gitlab-test.trikoder.net/trikoder/assignment1
+1. Create a fork of this repository in your private namespace on Gitlab (use button "Fork repository" on this page http://gitlab-test.trikoder.net/trikoder/assignment1)
 
 2. Clone your fork of the repository and do the assignment.
 
