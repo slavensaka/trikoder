@@ -1,1 +1,1 @@
-[Assignment](http://gitlab-test.trikoder.net/trikoder/assignment1/wikis/home)
+[Instructions and Assignment](http://gitlab-test.trikoder.net/trikoder/assignment1/wikis/home)
