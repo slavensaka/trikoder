@@ -1,30 +1,42 @@
 <?php
-// ime
-// kategorija
 
-// * name
-// * category (assume predefined flat list of categories)
 Class Product extends InvoiceItem  {
-
 
 	protected $name;
 
 	protected $category; 
 
-
+	/**
+	*
+	* Setting the name
+	*
+	**/
+	
 	public function setName($name) {
 		$this->name = $name;
 		return true;
 	}
-	public function setCategory($category){
 
+	/**
+	*
+	* Setting the category
+	*
+	**/
+	
+	public function setCategory($category){
 	$products = array("Mac", "NT", "Win", "Linux");
-		if (in_array($category, $os)) {
+		if (in_array($category, $products)) {
     		 $this->category = $products;
     		 return true;
-		}
+		} else return false;
 	}
 
+	/**
+	*
+	* Inserting the product into the database
+	*
+	**/
+	
 	public function setProduct($invoice_item, $invoice_id, $name, $category) {
 		// include 'src/connect.php';
 		// Invoice::connectdb();
@@ -34,6 +46,12 @@ Class Product extends InvoiceItem  {
 		$rezultat1 = $db->query($query) or die(mysql_error);
 	}
 
+	/**
+	*
+	* Selecting all products
+	*
+	**/
+	
 	public function getAllProducts(){
 		include 'src/connect.php';
 	    $query = "SELECT * FROM invoice";

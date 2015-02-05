@@ -9,13 +9,15 @@
             "email": "name@domain.com"
         }
     ],
-    "require": {},
+    "require": {
+        "fzaninotto/faker": "1.5.*@dev"
+        },
   
     "autoload": {
         "psr-0": {
             "": "src/"
-        },
-        "classmap": ["connect.php"]
+
+        }
     }
 
 

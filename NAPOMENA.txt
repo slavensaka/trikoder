@@ -1,0 +1,3 @@
+Implementirao sam "set" metode unutar tri klase. 
+Za "get" je jednostavno. 
+Izradio sam tablice unutar mysql baze. 

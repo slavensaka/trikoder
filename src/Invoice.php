@@ -1,12 +1,6 @@
 <?php 
 // namespace Assignment\Invoice;
 
-// id
-// kada stvoreno
-// do kada platit
-// totalni bruto cijena
-// totalni tax cijena ( 25% od gornjeg)
-// tekst o kupcu
 abstract Class Invoice implements InvoiceInterface
 {
 
@@ -24,7 +18,7 @@ abstract Class Invoice implements InvoiceInterface
 
 	/**
 	*
-	* Block comment
+	* Setting the date of creation
 	*
 	**/
 	public function setDateOfCreation($date_time){
@@ -32,17 +26,34 @@ abstract Class Invoice implements InvoiceInterface
 		return true;
 	}
 
-
+	/**
+	*
+	* Setting the due date
+	*
+	**/
+	
 	public function setDueDate($due_date){
 		$this->due_date = $due_date;
 		return true;
 	}
 
+	/**
+	*
+	* Setting the total brutto amount
+	*
+	**/
+	
 	public function setTotalBrutoAmount($total_bruto){
 		$this->total_bruto = $total_bruto;
 		return true;
 	} 
 
+	/**
+	*
+	* Setting the total tax amount
+	*
+	**/
+	
 	public function setTaxAmount(){
  		$tax = $this->total_bruto;
 		$taxi = $tax / 100 * 25;
@@ -50,6 +61,12 @@ abstract Class Invoice implements InvoiceInterface
 		return true;
 	}
 
+	/**
+	*
+	* Setting the Text info about customer
+	*
+	**/
+	
 	public function setTextInfoCustomer($name,$address){
 		$this->name = $name;
 		$this->address = $address;
