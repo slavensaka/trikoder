@@ -1,0 +1,22 @@
+{
+    "name": "slavensaka",
+    "description": "trikoder",
+    "license": "MIT",
+    "keywords": ["trikoder"],
+    "authors": [
+        {
+            "name": "Slaven Sakacic",
+            "email": "name@domain.com"
+        }
+    ],
+    "require": {},
+  
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        },
+        "classmap": ["connect.php"]
+    }
+
+
+}
